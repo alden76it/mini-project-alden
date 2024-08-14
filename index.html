@@ -7,16 +7,18 @@
     
 </head>
 <body>
+    <header>
+        <h1>
+            Kalkulator BMI
+        </h1>
+    </header>
     <main>
-        <h2>
-          Kalkulator BMI
-        </h2>
         <P>
             Berat Badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang
             penampilan, berat badan ideal juga menandakan kondisi tibuh yang sehat. Bagaimana denganmu? Yuk
             hitung sekarang di Kalkulator BMI.
         </p>
-        <div class="form_data_diri">
+        <div class="form_jenis_kelamin">
             <form action="jenis_kelamin">
                 <input type="radio" id="pria" name="data_jenis_kelamin" value="Pria">
                 <label for="pria">Pria</label>
@@ -24,14 +26,27 @@
                 <label for="wanita">Wanita</label>
             </form>
             <br>
-            <form action="berat_badan">
-                <label for="input_bb">Berat Badan (kg)</label><br>
-                <input type="text" id="input_bb" name="data_berat_badan" value="input_bb"><br>
-                <label for="input_usia">Usia (tahun)</label><br>
-                <input type="text" id="input_usia" name="data_usia" value="input_usia">
-            </form>
+            <div>
+                <form action="berat_badan">
+                    <label for="input_bb">Berat Badan (kg)</label><br>
+                    <input type="number" id="input_bb" name="data_berat_badan" value="input_bb"><br><br>
+                    <label for="input_usia">Usia (tahun)</label><br>
+                    <input type="number" id="input_usia" name="data_usia" value="input_usia"><br><br>
+                    <label for="input_tinggi">Tinggi badan (cm)</label><br>
+                    <input type="number" id="input_tb" name="data_tinggi_badan" value="input_tb"><br><br>
+                </form>
+            </div>
+            <div class="btn_container">
+                <button class="hitungbmi" type="button" onclick="validationForm">Hitung BMI</button>
+                <button type="reset">Reset</button>
+            </div>
+            
 
         </div>
     </main>
+    <footer>
+        designed by Ajibata
+    </footer>
+    <script src="./JS/script.js"></script>
 </body>
 </html>
