@@ -8,5 +8,11 @@ function validationFrom() {
     let converttbTom = input_tb / 100;
     let inputTbpow = Math.pow(converttbTom.2);
 
-    if input_bb == " "
+    if (input_bb == "") {
+        alert(Data input berat badan kosong)
+    }
+    if (input_tb =="") {
+        alert(Data input tinggi badan kosong)
+    }
+    
 }
