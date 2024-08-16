@@ -20,19 +20,23 @@ function validationFrom() {
 
         if (resultBMI < 18.5) {
             document.getElementById("comment").innerHTML = "Kekurangan berat badan";
+            document.getElementById("statusBb").innerHTML = "Anda memiliki berat badan kurang";
         }
         else if (resultBMI >= 18.5 && resultBMI <= 25) {
             document.getElementById("comment").innerHTML = "Normal (Ideal)";
+            document.getElementById("statusBb").innerHTML = "Anda memiliki berat badan normal";
         }
         else if (resultBMI >= 25 && resultBMI <= 29.9) {
             document.getElementById("comment").innerHTML = "Kelebihan berat badan";
+            document.getElementById("statusBb").innerHTML = "Anda memiliki berat badan berlebih";
         } 
         else if (resultBMI >= 30) {
             document.getElementById("comment").innerHTML = "Kegemukan (obesitas)";
+            document.getElementById("statusBb").innerHTML = "Anda kelebihan berat badan";
         }
         return false;
         
-        let statusBb = document.getElementById("comment").value;
+        
     }
 
 }
