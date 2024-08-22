@@ -23,27 +23,28 @@
             </article>
             <div class="form_jenis_kelamin">
                 <form action="jenis_kelamin">
-                    <input type="radio" id="pria" name="data_jenis_kelamin" value="Pria">
+                    <input type="radio" id="pria" name="data_jenis_kelamin" value="pria">
                     <label for="pria">Pria</label>
-                    <input type="radio" id="wanita" name="data_jenis_kelamin" value="Wanita">
+                    <input type="radio" id="wanita" name="data_jenis_kelamin" value="wanita">
                     <label for="wanita">Wanita</label>
-                </form>
+                
                 <br>
-                <div>
-                    <form action="berat_badan">
-                        <label for="input_bb">Berat Badan (kg)</label><br>
-                        <input type="number" id="input_bb" name="data_berat_badan" value="input_bb"><br><br>
-                        <label for="input_usia">Usia (tahun)</label><br>
-                        <input type="number" id="input_usia" name="data_usia" value="input_usia"><br><br>
-                        <label for="input_tinggi">Tinggi badan (cm)</label><br>
-                        <input type="number" id="input_tb" name="data_tinggi_badan" value="input_tb"><br><br>
-                    
-                        <div class="button-container">
-                            <button class="hitungbmi" type="button" onclick="validationFrom()">Hitung BMI</button>
-                            <button type="reset">Reset</button>
-                        </div>
-                    </form>
-                </div>
+                    <div>
+                        <form action="berat_badan">
+                            <label for="input_bb">Berat Badan (kg)</label><br>
+                            <input type="number" id="input_bb" name="data_berat_badan" value="input_bb"><br><br>
+                            <label for="input_usia">Usia (tahun)</label><br>
+                            <input type="number" id="input_usia" name="data_usia" value="input_usia"><br><br>
+                            <label for="input_tinggi">Tinggi badan (cm)</label><br>
+                            <input type="number" id="input_tb" name="data_tinggi_badan" value="input_tb"><br><br>
+                        
+                            <div class="button-container">
+                                <button class="hitungbmi" type="button" onclick="validationFrom()">Hitung BMI</button>
+                                <button class ="reset" type="reset" onclick="resetAll()">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                </form>
             </div>
         
             <article>
@@ -75,11 +76,28 @@
                     Hasil
                 </h1>
             </header>
-            <div>
+            <div class="hasil">
                 <p id="comment"></p>
-                <p id="resultBMI"></p> 
+                <p id="resultBMI"></p>
+                <p id="statusBb"></p>
+                 
             </div>
-           <div id = "statusBb"></div>
+
+           <article>
+            <p>
+                Cara terbaik untuk mengatur berat badan adalah dengan mengatur kalori makanan
+                yang dikonsumsi dan berolahraga
+            </p>
+            <p>
+                Jika indeks BMI anda tidak berada dalam kategori normal anda disarankan untuk menjaga pola 
+                makan dan rajin berolahraga supaya indeks BMI kembali normal.
+            </p>
+            <p> 
+                BMI tidak sepenuhnya mewakili diagnosis dari kesehatan tubuh anda dan resiko penyakit seseorang,
+                Anda perlu berkonsultasi lebih lanjut mengenai resiko dan kekawatiran anda terkait berat badan
+                Anda.
+            </p>
+            </article>
 
         </aside>
     </main>

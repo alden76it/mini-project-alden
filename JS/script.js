@@ -2,10 +2,20 @@
 
 console.log("linked success");
 
+
+function resetAll() {
+    document.getElementById("resultBMI").innerText = '';
+    document.getElementById("comment").innerHTML = "";
+    document.getElementById("statusBb").innerHTML = "";
+}
 function validationFrom() {
+    let genderType = document.getElementsByName("data_jenis_kelamin");
     let input_bb = document.getElementById('input_bb').value;
     let input_tb = document.getElementById('input_tb').value;
-    
+            
+    if (genderType[0].checked !=true && genderType[1].checked !=true) {
+        alert ("Data jenis kelamin kosong");
+    }
     if (input_bb == '') {
         alert('Data input berat badan kosong');
     } else if (input_tb == '') {

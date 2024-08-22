@@ -1,10 +1,44 @@
 body {
-    background-color:white;
+    background-color:rgb(250, 225, 2);
 
 }
 aside {
     width: 50%;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 main {
     display: flex;
+}
+.hasil {
+    background-color: rgb(235, 18, 18);
+    width: 500px;
+    height: 500px;
+    background-size: 500px;
+    background-position: 500px;
+    border-width: 500px;
+    border-bottom: 500px;
+    border-top: 500px;
+   }
+#comment {
+    text-align: center;
+    top: 300px;
+    bottom: 300px;
+    
+    
+}
+#resultBMI {
+    text-align: center;
+    top: 300px;
+    bottom: 300px;    
+    
+}
+#statusBb {
+    text-align: center;
+    top: 300px;
+    bottom: 300px;
+}
+table {
+    top: 150px;
+    bottom: 150px;
 }
