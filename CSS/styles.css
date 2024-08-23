@@ -7,18 +7,25 @@ aside {
     margin-left: 25px;
     margin-right: 25px;
 }
+#berat-ideal {
+    font-family:Verdana;
+    text-align:justify;
+
+}
 main {
     display: flex;
 }
+.form_data_diri {
+    width: auto;
+    height: 300px;
+    background-color: darkgray;
+    padding: 10px;
+}
 .hasil {
     background-color: rgb(235, 18, 18);
-    width: 500px;
+    width: auto;
     height: 500px;
-    background-size: 500px;
-    background-position: 500px;
-    border-width: 500px;
-    border-bottom: 500px;
-    border-top: 500px;
+    
    }
 #comment {
     text-align: center;
@@ -37,8 +44,4 @@ main {
     text-align: center;
     top: 300px;
     bottom: 300px;
-}
-table {
-    top: 150px;
-    bottom: 150px;
 }

@@ -14,7 +14,7 @@ function validationFrom() {
     let input_tb = document.getElementById('input_tb').value;
             
     if (genderType[0].checked !=true && genderType[1].checked !=true) {
-        alert ("Data jenis kelamin kosong");
+        alert ("Data input jenis kelamin kosong");
     }
     if (input_bb == '') {
         alert('Data input berat badan kosong');
